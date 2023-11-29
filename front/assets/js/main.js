@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
           currentEvents.forEach(event => {
           const card = document.createElement('li');
           card.classList.add('booking-card');
-          card.style.backgroundImage = `url('${event.image}')`;
+          card.style.backgroundImage = `url('../images/${event.image}')`;
 
           const truncatedDescription = event.description.length > 200
           ? event.description.substring(0, 300) + '...'
